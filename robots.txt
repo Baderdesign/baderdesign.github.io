@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://baderdesign.github.io/sitemap.xml

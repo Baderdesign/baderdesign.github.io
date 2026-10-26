@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt – Bader Design</title>
+<meta name="description" content="Kontakt zu Bader Design per WhatsApp oder Formular.">
+<link rel="canonical" href="https://baderdesign.github.io/kontakt.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Bader Design">
+<meta property="og:title" content="Bader Design – Handwerk mit Handschrift">
+<meta property="og:description" content="Dekorative Oberflächen, Unikate aus Holz und Epoxidharz und Bader Digital, Papierkram digital für Handwerker.">
+<meta property="og:url" content="https://baderdesign.github.io/kontakt.html">
+<meta property="og:image" content="https://baderdesign.github.io/og-bild.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#16151C">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="band">
+<nav><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Bader Design, Startseite">
+    <img src="logo-icon.webp" alt="" width="40" height="45">
+    <span><b>BADER</b><small>DESIGN</small></span>
+  </a>
+  <ul><li><a href="oberflaechen.html">Oberflächen</a></li><li><a href="woodepoxy.html">Woodepoxy</a></li><li><a href="digital.html">Bader Digital</a></li><li><a href="ueber-mich.html">Über mich</a></li><li><a href="kontakt.html" aria-current="page">Kontakt</a></li></ul>
+</div></nav>
+</div>
+
+<main>
+<section class="contact" id="kontakt"><div class="wrap">
+  <div>
+    <p class="label">Kontakt</p>
+    <h1 style="font-size:clamp(28px,3.8vw,44px);margin-top:8px">Lass uns reden</h1>
+    <p style="color:var(--muted);margin-top:14px;max-width:40ch">Erzähl mir kurz, was du vorhast. Ich melde mich meistens innerhalb von 24 Stunden. Am schnellsten geht es per WhatsApp: Formular ausfüllen, die Nachricht ist dann schon fertig.</p>
+    <div class="direct">
+      <div><span>WhatsApp / Telefon</span><b>+41 79 889 89 46</b></div>
+      <div><span>E-Mail</span><b>davidbader@gmx.ch</b></div>
+    </div>
+  </div>
+  <form id="f" novalidate>
+    <div class="row">
+      <label for="name">Name<input id="name" required placeholder="Vor- und Nachname"></label>
+      <label for="ort">Ort<input id="ort" placeholder="z. B. Luzern"></label>
+    </div>
+    <div class="row">
+      <label for="produkt">Thema
+        <select id="produkt">
+          <option>Oberflächengestaltung</option><option>Servierbrett</option><option>Stirnholzbrett</option><option>Flaschenöffner</option><option>Lasergravur</option><option>3D-Relief</option><option>Untersetzer</option><option>Kugelschreiber-Box</option><option>Anderes Einzelstück</option><option>Bader Digital</option>
+        </select></label>
+      <label for="menge">Anzahl<input id="menge" type="number" min="1" value="1" inputmode="numeric"></label>
+    </div>
+    <label for="wunsch">Deine Nachricht<textarea id="wunsch" placeholder="Harzfarbe, Gravur, Fläche in m², Anzahl Mitarbeitende …"></textarea></label>
+    <button class="btn solid" type="submit" style="justify-self:start">Nachricht erstellen</button>
+    <p class="status" id="status" role="status"></p>
+    <div class="out" id="out">
+      <pre id="msg"></pre>
+      <div class="cta" style="margin-top:0">
+        <a class="btn solid" id="wa" href="#" target="_blank" rel="noopener">In WhatsApp öffnen</a>
+        <button class="btn" type="button" id="copy">Text kopieren</button>
+      </div>
+    </div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>© 2026 Bader Design · Woodepoxy Manufaktur · Bader Digital</p>
+  <p>Impressum: Bader Design · David Bader · Stüdlerstrasse 23 · 8913 Ottenbach · Schweiz · davidbader@gmx.ch</p>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
