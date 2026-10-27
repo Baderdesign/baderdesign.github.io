@@ -277,6 +277,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
 
 /* multipage */
+/* logo 3d */
+.home-hero .hexwrap{max-width:300px;justify-self:center;perspective:900px}
+.home-hero .hex{transform:rotateY(-14deg) rotateX(8deg);transform-style:preserve-3d;filter:drop-shadow(18px 28px 22px rgba(0,0,0,.6)) drop-shadow(0 0 40px rgba(217,169,63,.18));animation:hexfloat 6s ease-in-out infinite;transition:transform .6s ease}
+.home-hero .hexwrap:hover .hex{transform:rotateY(0) rotateX(0)}
+@keyframes hexfloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@media (max-width:860px){.home-hero .hexwrap{max-width:190px}}
+@media (prefers-reduced-motion:reduce){.home-hero .hex{animation:none}}
+
 .head h1{font-size:clamp(30px,4vw,46px);letter-spacing:-.02em;margin-top:8px}
 nav ul a[aria-current="page"]{color:#F2CB6B}
 .pagehead{padding-block:40px 8px}
